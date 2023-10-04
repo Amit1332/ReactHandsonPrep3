@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Hello } from "../Hello";
 
 class ValidateForm extends Component{
     constructor(){
@@ -16,7 +17,7 @@ class ValidateForm extends Component{
                 warnStatus:false,
                 warn:'',
                 status:false,
-                isForm:false
+                isForm:true
         }
     }
 
@@ -139,6 +140,10 @@ class ValidateForm extends Component{
              {
                     this.state.status? this.state.toast?<Toast data="Creted Successfully" color="green"/>:'' :''
             }
+
+
+  
+<Hello data={this.state.isForm ? 'User Form' :'User FeedBack Data'}/>
             <div className='container'>
 
                 {

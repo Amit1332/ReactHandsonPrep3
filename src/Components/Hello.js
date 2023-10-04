@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Hello = () => {
+export const Hello = (props) => {
   return (
-    <h2 style={{marginTop:"20px"}}>User Form 👍</h2>
+    <h2 style={{marginTop:"20px"}}> {props.data}👍</h2>
   )
 }
